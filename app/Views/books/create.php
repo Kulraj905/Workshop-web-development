@@ -1,5 +1,6 @@
 <h2>Add a New Book</h2>
 
+<<<<<<< HEAD
 <!-- Make sure to include enctype for file uploads -->
 <form action="<?= base_url('books') ?>" method="post" class="book-form" enctype="multipart/form-data">
     <?= csrf_field() ?>
@@ -33,6 +34,31 @@
 </form>
 
 <!-- Styles -->
+=======
+<form action="<?= base_url('books') ?>" method="post" class="book-form">
+
+    <?= csrf_field() ?>
+
+    <label for="title">Title</label>
+    <input type="text" name="title" required>
+
+    <label for="author">Author</label>
+    <input type="text" name="author" required>
+
+    <label for="genre">Genre</label>
+    <input type="text" name="genre">
+
+    <label for="published_year">Published Year</label>
+    <input type="number" name="published_year" min="0">
+
+    <label for="description">Description</label>
+    <textarea name="description" rows="4"></textarea>
+
+    <button type="submit">Save Book</button>
+</form>
+
+<!-- ?? Styling -->
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -70,7 +96,10 @@
 
     .book-form input[type="text"],
     .book-form input[type="number"],
+<<<<<<< HEAD
     .book-form input[type="file"],
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     .book-form textarea {
         width: 100%;
         padding: 10px 12px;

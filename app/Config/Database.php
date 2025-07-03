@@ -26,10 +26,14 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
+<<<<<<< HEAD
         'hostname'     => 'mi-linux.wlv.ac.uk',
         'username'     => '2307946',
         'password'     => 'Rajababu1122@',
         'database'     => 'db2307946',
+=======
+        'hostname'     => 'localhost',
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         'username'     => '',
         'password'     => '',
         'database'     => '',

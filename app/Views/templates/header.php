@@ -1,4 +1,5 @@
 <!doctype html>
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,10 +11,16 @@
   <body>
     <div class="container">
 <!doctype html>
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
 <html>
 <head>
     <title>CodeIgniter Tutorial</title>
 </head>
 <body>
 
+<<<<<<< HEAD
     <!-- <h1><?= esc($title) ?></h1> -->
+=======
+    <!-- <h1><?= esc($title) ?></h1> -->
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7

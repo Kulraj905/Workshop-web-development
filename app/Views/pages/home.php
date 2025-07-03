@@ -271,4 +271,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
 >>>>>>> 26240d2 (second commit)
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7

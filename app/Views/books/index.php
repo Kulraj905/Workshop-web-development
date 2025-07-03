@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?php $imgBase = 'https://mi-linux.wlv.ac.uk/~2307946/ci4-project/public/img/'; ?>
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,6 +134,7 @@
             box-shadow: 0 8px 16px rgba(0,0,0,0.08);
         }
 
+<<<<<<< HEAD
         .book-cover {
             width: 100%;
             height: 200px;
@@ -140,6 +144,8 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         .book-container h3 {
             margin-bottom: 10px;
             color: var(--primary-color);
@@ -204,10 +210,17 @@
             <a href="<?= base_url('/contact'); ?>">Contact</a>
             <a href="<?= base_url('/login'); ?>">Login</a>
         </nav>
+<<<<<<< HEAD
         <form class="search-form" action="<?= base_url('/google/search') ?>" method="get">
             <input type="text" name="q" placeholder="Search books..." required>
             <button type="submit">Search</button>
         </form>
+=======
+        <form class="search-form" action="https://mi-linux.wlv.ac.uk/~2307946/ci4-project/public/google/search" method="get">
+    <input type="text" name="q" placeholder="Search books..." required>
+    <button type="submit">Search</button>
+</form>
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     </div>
 </header>
 
@@ -220,9 +233,12 @@
         <div class="grid">
             <?php foreach ($books_list as $book): ?>
                 <div class="book-container">
+<<<<<<< HEAD
                     <?php if (!empty($book['image'])): ?>
                         <img src="<?= $imgBase . esc($book['image']) ?>" alt="Cover of <?= esc($book['title']) ?>" class="book-cover">
                     <?php endif; ?>
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
                     <h3><?= esc($book['title']) ?></h3>
                     <p><strong>Author:</strong> <?= esc($book['author']) ?></p>
                     <p><strong>Genre:</strong> <?= esc($book['genre']) ?></p>
@@ -238,7 +254,11 @@
         <p>Sorry, we couldn't find any books in the library.</p>
     <?php endif; ?>
 
+<<<<<<< HEAD
     <a href="<?= site_url('books/create'); ?>" class="btn">Add a New Book</a>
+=======
+    <a href="<?= site_url('books/create'); ?>" class="btn"> Add a New Book</a>
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
 </main>
 
 <script>
@@ -246,9 +266,13 @@
         const output = document.getElementById("ajaxBook");
         output.innerHTML = "<em>Loading book data...</em>";
 
+<<<<<<< HEAD
         const imgBase = "<?= $imgBase ?>";
 
         fetch('<?= base_url('ajax/get/') ?>' + slug)
+=======
+        fetch('https://mi-linux.wlv.ac.uk/~2307946/ci4-project/public/ajax/get/' + slug)
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Book not found or server error.");
@@ -259,10 +283,15 @@
                 if (data.error) {
                     output.innerHTML = "<strong>Error:</strong> " + data.error;
                 } else {
+<<<<<<< HEAD
                     const image = data.image ? `<img src="${imgBase}${data.image}" class="book-cover" alt="Cover of ${data.title}">` : '';
                     output.innerHTML = `
                         <div class="book-container">
                             ${image}
+=======
+                    output.innerHTML = `
+                        <div class="book-container">
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
                             <h3>${data.title}</h3>
                             <p><strong>Author:</strong> ${data.author}</p>
                             <p><strong>Genre:</strong> ${data.genre}</p>

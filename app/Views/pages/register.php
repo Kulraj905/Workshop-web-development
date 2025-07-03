@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Register | PustakMandir</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+=======
+    <title>Register | Book Review Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     <style>
         * {
             margin: 0;
@@ -17,6 +22,11 @@
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(to right, #8ec5fc, #e0c3fc);
             min-height: 100vh;
+<<<<<<< HEAD
+=======
+            display: flex;
+            flex-direction: column;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         /* Header / Navbar */
@@ -26,7 +36,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+<<<<<<< HEAD
             flex-wrap: wrap;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
@@ -39,7 +52,10 @@
         nav {
             display: flex;
             gap: 15px;
+<<<<<<< HEAD
             flex-wrap: wrap;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         nav a {
@@ -58,20 +74,38 @@
 
         /* Register Section */
         .container {
+<<<<<<< HEAD
             max-width: 600px;
             margin: 60px auto;
             padding: 0 20px;
+=======
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         .register-box {
             background-color: #ffffffdd;
+<<<<<<< HEAD
             padding: 50px 40px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+=======
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
+<<<<<<< HEAD
             font-size: 36px;
             color: #2c3e50;
             margin-bottom: 20px;
@@ -87,11 +121,23 @@
         input[type="text"],
         input[type="email"],
         input[type="password"] {
+=======
+            font-size: 40px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             padding: 12px;
             border: 2px solid #ccc;
             border-radius: 8px;
             font-size: 16px;
             width: 100%;
+<<<<<<< HEAD
+=======
+            margin-bottom: 20px;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         button {
@@ -102,7 +148,11 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
+<<<<<<< HEAD
             transition: background-color 0.3s ease;
+=======
+            transition: background 0.3s ease;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         button:hover {
@@ -114,7 +164,10 @@
             margin-top: 20px;
             font-size: 16px;
             color: #2c3e50;
+<<<<<<< HEAD
             text-align: center;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         .login-link:hover {
@@ -128,7 +181,10 @@
             text-align: center;
             padding: 20px 10px;
             font-size: 14px;
+<<<<<<< HEAD
             margin-top: 60px;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         footer a {
@@ -139,6 +195,7 @@
         footer a:hover {
             text-decoration: underline;
         }
+<<<<<<< HEAD
 
         @media (max-width: 768px) {
             header {
@@ -181,6 +238,8 @@
                 font-size: 16px;
             }
         }
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     </style>
 </head>
 <body>
@@ -201,7 +260,12 @@
         <div class="register-box">
             <h1>Register</h1>
             <form action="<?= base_url('/register/submit'); ?>" method="POST">
+<<<<<<< HEAD
                 <?= csrf_field() ?>
+=======
+
+		<?= csrf_field() ?>
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>

@@ -9,7 +9,11 @@ class Books extends BaseController
 {
     public function index()
     {
+<<<<<<< HEAD
         $model = new BookModel();
+=======
+        $model = new BookModel(); // ? Use "new" instead of "model()" helper
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
 
         $data = [
             'books_list' => $model->findAll(),
@@ -30,6 +34,7 @@ class Books extends BaseController
 
     public function store()
     {
+<<<<<<< HEAD
         helper(['form', 'url', 'text']);
 
         $model = new BookModel();
@@ -44,6 +49,14 @@ class Books extends BaseController
             $imageFile->move(FCPATH . 'Img', $imageName);
         }
 
+=======
+        helper('text'); // For slug
+
+        $model = new BookModel(); // ? again, use "new BookModel()"
+
+        $slug = url_title($this->request->getPost('title'), '-', true);
+
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         $model->save([
             'title'          => $this->request->getPost('title'),
             'author'         => $this->request->getPost('author'),
@@ -51,15 +64,25 @@ class Books extends BaseController
             'published_year' => $this->request->getPost('published_year'),
             'description'    => $this->request->getPost('description'),
             'slug'           => $slug,
+<<<<<<< HEAD
             'image'          => $imageName,
         ]);
 
         return redirect()->to('/books')->with('success', 'Book added successfully!');
+=======
+        ]);
+
+        return redirect()->to('/books');
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     }
 
     public function view($slug = null)
     {
+<<<<<<< HEAD
         $model = new BookModel();
+=======
+        $model = new BookModel(); // ? consistency again
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         $book = $model->where(['slug' => $slug])->first();
 
         if (! $book) {
@@ -75,4 +98,8 @@ class Books extends BaseController
             . view('books/view')
             . view('templates/footer');
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
 }

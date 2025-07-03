@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>About | PustakMandir</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+=======
+    <title>About | Book Review Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     <style>
         * {
             margin: 0;
@@ -17,8 +23,16 @@
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(to right, #8ec5fc, #e0c3fc);
             min-height: 100vh;
+<<<<<<< HEAD
         }
 
+=======
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header / Navbar */
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         header {
             background-color: #ffffffcc;
             padding: 20px 50px;
@@ -33,6 +47,10 @@
             font-family: 'Playfair Display', serif;
             font-size: 28px;
             color: #2c3e50;
+<<<<<<< HEAD
+=======
+            margin-bottom: 10px;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         .nav-search-wrapper {
@@ -62,6 +80,10 @@
             color: #fff;
         }
 
+<<<<<<< HEAD
+=======
+        /* Search Bar */
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         .search-form {
             display: flex;
             align-items: center;
@@ -90,10 +112,21 @@
             background-color: #5a4bcf;
         }
 
+<<<<<<< HEAD
         .container {
             max-width: 1000px;
             margin: 60px auto;
             padding: 0 20px;
+=======
+        /* About Section */
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         .about-box {
@@ -101,6 +134,10 @@
             padding: 60px 40px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+<<<<<<< HEAD
+=======
+            max-width: 800px;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         h1 {
@@ -108,14 +145,20 @@
             font-size: 40px;
             color: #2c3e50;
             margin-bottom: 15px;
+<<<<<<< HEAD
             text-align: center;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         p {
             font-size: 20px;
             color: #555;
             margin-bottom: 30px;
+<<<<<<< HEAD
             text-align: center;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         .btn {
@@ -128,22 +171,32 @@
             cursor: pointer;
             transition: background 0.3s ease;
             text-decoration: none;
+<<<<<<< HEAD
             display: inline-block;
             margin: 0 auto;
             text-align: center;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         .btn:hover {
             background-color: #5a4bcf;
         }
 
+<<<<<<< HEAD
+=======
+        /* Footer */
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         footer {
             background-color: #2c3e50;
             color: #ffffffcc;
             text-align: center;
             padding: 20px 10px;
             font-size: 14px;
+<<<<<<< HEAD
             margin-top: 60px;
+=======
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         }
 
         footer a {
@@ -155,6 +208,10 @@
             text-decoration: underline;
         }
 
+<<<<<<< HEAD
+=======
+        /* Responsive Styles */
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -175,6 +232,16 @@
                 margin-top: 10px;
             }
 
+<<<<<<< HEAD
+=======
+            nav a {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                text-align: left;
+            }
+
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             .search-form {
                 width: 100%;
                 margin-top: 10px;
@@ -182,10 +249,18 @@
 
             .search-form input[type="text"] {
                 width: 70%;
+<<<<<<< HEAD
+=======
+                border-radius: 8px 0 0 8px;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             }
 
             .search-form button {
                 width: 30%;
+<<<<<<< HEAD
+=======
+                border-radius: 0 8px 8px 0;
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             }
 
             .about-box {

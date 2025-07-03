@@ -4,12 +4,20 @@ namespace App\Controllers;
 
 use App\Models\UserModel;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
 class Login extends BaseController
 {
     public function login()
     {
         // Display the login form
+<<<<<<< HEAD
         return view('pages/login');
+=======
+        return view('login');
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     }
 
     public function login_submit()
@@ -29,12 +37,16 @@ class Login extends BaseController
                     'user_email' => $user['email'],
                     'isLoggedIn' => true,
                 ]);
+<<<<<<< HEAD
 
                 // OPTIONAL: Add success message (can remove if not needed)
                 $session->setFlashdata('success', 'You have successfully logged in.');
 
                 // ?? Redirect to books instead of non-existent dashboard
                 return redirect()->to(site_url('books')); // ? change from 'dashboard' to 'books'
+=======
+                return redirect()->to(site_url('dashboard'));
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             } else {
                 $session->setFlashdata('error', 'Incorrect password.');
             }
@@ -48,7 +60,11 @@ class Login extends BaseController
     public function register()
     {
         // Show the registration form
+<<<<<<< HEAD
         return view('pages/register');
+=======
+        return view('register');
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     }
 
     public function register_submit()
@@ -74,8 +90,13 @@ class Login extends BaseController
         }
 
         // Save the user
+<<<<<<< HEAD
         $data = [
             'username' => $username,
+=======
+        $data = [            
+		'username' => $username,
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
             'email' => $email,
             'password' => password_hash($password, PASSWORD_DEFAULT),
         ];
@@ -88,8 +109,13 @@ class Login extends BaseController
 
     public function logout()
     {
+<<<<<<< HEAD
         // Destroy the session and redirect to login or home
         session()->destroy();
         return redirect()->to(site_url('login')); // or use site_url('/') for homepage
+=======
+        session()->destroy();
+        return redirect()->to(site_url('login'));
+>>>>>>> 26240d2c5dea2d6a908a0fcbc16344a20f5bdef7
     }
 }
